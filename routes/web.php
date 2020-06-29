@@ -1,6 +1,9 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use SebastianBergmann\Environment\Console;
+use App\User;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,5 +17,34 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+  return view('welcome');
 });
+
+/*Route::get('/', function () {
+
+    $user=Auth::user();
+
+    if(Auth::check()){
+   
+        if($user->esMedico()){
+        
+        echo 'eres medico';
+
+
+    }else{
+
+        echo 'eres paciente';
+
+    }
+
+    return view('home');
+
+}
+    });*/
+
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+

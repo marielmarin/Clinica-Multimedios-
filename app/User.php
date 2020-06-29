@@ -36,4 +36,18 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function role(){
+
+        return $this->belongsTo('App\Role');
+    }
+
+    public function esMedico(){
+        if($this->role['nombre_rol']=='medico'){
+            
+            return true; 
+        }
+
+          return false;
+    }
 }
