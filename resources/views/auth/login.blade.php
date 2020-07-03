@@ -16,8 +16,10 @@
     <!-- Nuestro css-->
     <link href="{{ asset('css/login.css') }}" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Inicio sesión</title>
 
+</head>
 @extends('layouts.app')
 
 @section('content') 
@@ -44,8 +46,14 @@
                     @enderror
                 </div>
 
-                    <button type="submit" class="btn btn-primary">
+                    <button class="btn btn-primary" type="submit" >
                         {{ __('Iniciar sesión') }}
+                    </button>
+                    </br>
+                    </br>
+            </form>
+            <button class="btn btn-primary" type="submit" >
+                        {{ __('Iniciar sesión Médico') }}
                     </button>
 
                     @if (Route::has('password.request'))
@@ -53,7 +61,7 @@
                             {{ __('¿Ólvido su contraseña?') }}
                         </a>
                     @endif              
-            </form>
+            
     </section>
 </div>   
 @endsection

@@ -20,31 +20,10 @@ Route::get('/', function () {
   return view('welcome');
 });
 
-/*Route::get('/', function () {
-
-    $user=Auth::user();
-
-    if(Auth::check()){
-   
-        if($user->esMedico()){
-        
-        echo 'eres medico';
-
-
-    }else{
-
-        echo 'eres paciente';
-
-    }
-
-    return view('home');
-
-}
-    });*/
 
 
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-
+//Route::get('/medicos', 'HomeController@index')->name('home');
