@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    }
+    
+    body{
+        background: #44b5ed;;
+    }
+    
+    
+    a{
+        text-align: center;
+        color: white; 
+        text-decoration: none; 
+        font-size: 18px;
+    
+    }
+    a:hover{
+        color:white;
+        text-decoration: underline;
+    }
+    
+  
+    @media all and (min-width: 768px){
+      .flex{
+          display:flex;
+          justify-content:space-between;
+       }
+    }
+    
+    .logo{
+   
+      background: cornflowerblue;
+      padding: 2rem;
+      font-family: "calibri";
+      color: black;
+      font-size: 18px;
+      color: white;
+    }
+  
+    .imagen{
+      background: #44b5ed;;
+      display: block;
+       margin: auto;
+        margin-top: 200px;
+  } 
+  
+  
+    header{
+      background: cornflowerblue;
+    }
+    
+    .menu ul{
+        margin-top: 25px;
+        padding-inline-start: 0;
+        font-family: "calibri";
+        color: black;
+        font-size: 18px;
+        color: white;  
+      }
+    
+    .select-menu{
+      width:100%;
+      padding:.5rem;
+      font-family: "calibri";
+      color: black;
+      font-size: 18px;
+      color: black;
+    }
+    
+    .menu{
+      display:none;
+    }
+    
+    @media all and (min-width: 768px){
+        .menu{
+            display:block;
+        }
+        .select-menu{
+          display:none;
+      }
+    }
+    
+    @media all and (min-width: 768px){
+        .menu ul{
+           display:flex;
+           justify-content:space-between;
+           align-items:center; 
+           font-family: "calibri";
+           color: black;
+           font-size: 18px;
+           color: white;
+        }
+    }
+    
+    .menu ul li{
+      display: block;
+      padding:1rem;
+      background: cornflowerblue;
+      margin-bottom: .5rem;
+      font-family: "calibri";
+      color: black;
+      font-size: 18px;
+      color: white;  
+    }
+    
+    @media all and (min-width: 768px){
+      .menu ul li{
+        margin-bottom: 0;
+        font-family: "calibri";
+        color: black;
+        font-size: 18px;
+        color: white;
+      
+      }
+    }
+  
+    .content {
+      text-align: center;
+    }
+      
+    .content .title {
+      font-size: 84px;
+      margin-bottom: 30px;
+  }
+  
+  
+  
+  
+    
+    
+  

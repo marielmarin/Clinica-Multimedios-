@@ -10,7 +10,7 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
         <!-- Styles -->
-        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+        <link href="{{ asset('css/welcome.css') }}" rel="stylesheet">
         
     </head>
 
@@ -46,8 +46,8 @@
                 </div>
             </div>
         </header>
-        <!-- <section class="imagen">
-        <img src="../IMAGENES/logo7.jpeg" class="rounded float-center" alt="Logo">
-        </section>                     -->
+      <div > 
+        <img  class="imagen" src="../IMAGENES/logo7.jpeg"  alt="Logo">
+        </div> 
     </body>
 </html>
